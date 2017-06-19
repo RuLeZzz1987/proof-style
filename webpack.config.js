@@ -36,7 +36,7 @@ module.exports = {
                         {
                             loader: "css-loader", options: {
                             modules: true,
-                            localIdentName: '[path][name]-[local]'
+                            localIdentName: '[path][name]-[local]-[hash:5]'
                         }
                         }, "autoprefixer-loader?browsers=last 2 version", "resolve-url-loader", "sass-loader?sourceMap"]
                 })
