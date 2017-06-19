@@ -1,4 +1,4 @@
-import s from "./styles.css";
+import s from "./styles.scss";
 import Nav from "../nav";
 import Content from "../content";
 import News from "../news";

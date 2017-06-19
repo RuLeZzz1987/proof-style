@@ -9,7 +9,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.scss$/,
+                test: /.+global-styles.+\.scss$/,
                 loader: ExtractTextPlugin.extract({
                     loader: "css-loader!autoprefixer-loader?browsers=last 2 version!resolve-url-loader!sass-loader?sourceMap"
                 })
@@ -21,9 +21,22 @@ module.exports = {
                     loader: {
                         loader: "css-loader", options: {
                             modules: true,
-                            localIdentName: '[path][name]-[local]'
+                            localIdentName: '[local]'
                         }
                     }
+                })
+            },
+            {
+                test: /\.scss$/,
+                use: ExtractTextPlugin.extract({
+                    fallbackLoader: "style-loader",
+                    loader: [
+                        {
+                            loader: "css-loader", options: {
+                            modules: true,
+                            localIdentName: '[path][name]-[local]'
+                        }
+                        }, "autoprefixer-loader?browsers=last 2 version", "resolve-url-loader", "sass-loader?sourceMap"]
                 })
             },
             {

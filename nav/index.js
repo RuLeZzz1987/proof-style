@@ -1,5 +1,7 @@
 import Link from "../link";
-import s from "./styles.css";
+import "../link/styles.css";
+
+import s from "./styles.scss";
 
 const items = [
   { id: "oocss", name: "OOCSS" },

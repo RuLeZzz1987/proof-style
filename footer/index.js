@@ -1,6 +1,6 @@
 import Link from "../link";
 
-import s from "./styles.css";
+import s from "./styles.scss";
 
 export default function Footer() {
   return `<div class="${s.footer}">

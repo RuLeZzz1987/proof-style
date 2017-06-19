@@ -1,4 +1,4 @@
-import s from "./styles.css";
+import s from "./styles.scss";
 import image from "./imgpsh_fullsize.jpg";
 
 export default function Content() {

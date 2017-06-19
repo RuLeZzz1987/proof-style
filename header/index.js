@@ -1,4 +1,4 @@
-import s from "./styles.css";
+import s from "./styles.scss";
 
 export default function Header() {
   return `<div class="${s.root}">
