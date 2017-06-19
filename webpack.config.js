@@ -9,7 +9,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /.+global-styles.+\.scss$/,
+                test: /global-styles\/.+\.scss$/,
                 loader: ExtractTextPlugin.extract({
                     loader: "css-loader!autoprefixer-loader?browsers=last 2 version!resolve-url-loader!sass-loader?sourceMap"
                 })
@@ -28,8 +28,10 @@ module.exports = {
             },
             {
                 test: /\.scss$/,
+                exclude: /node_modules|global-styles/,
                 use: ExtractTextPlugin.extract({
                     fallbackLoader: "style-loader",
+
                     loader: [
                         {
                             loader: "css-loader", options: {
