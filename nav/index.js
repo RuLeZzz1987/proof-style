@@ -18,7 +18,7 @@ const items = [
 export default function Nav() {
   return `<div class="${s.nav}">
       <ul class="${s.list}">
-          ${items.map(item => Link(item)).join("\n")}
+          ${items.map(item => `<li class="global-link">${Link(item)}</li>`).join("\n")}
       </ul>
   </div>`;
 }

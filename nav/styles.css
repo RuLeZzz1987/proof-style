@@ -9,6 +9,6 @@
     list-style: none;
 }
 
-:global(.link-styles-link) {
+.nav :global(.link-styles-link) {
     background: purple;
 }

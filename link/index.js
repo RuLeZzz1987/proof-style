@@ -24,10 +24,10 @@ export default link => {
     const activeCls = link.id === active ? local.linkActive : "";
     const separateCls = link.id === separate ? local.linkSeparate : "";
     return (
-        `<li class="global-link">
+        `
             <a href="${root}${link.id}" class="${local.link} ${separateCls} ${activeCls}">
               ${link.name}
             </a>
-        </li>`
+        `
     );
 }
