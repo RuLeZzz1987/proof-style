@@ -6,3 +6,8 @@ This example is already built, but if you want build it by yourself, here is a g
 `npm i`
 
 `npm run build`
+
+
+`nav` - smart component (override `link` styles)
+
+`link` - dumb component
