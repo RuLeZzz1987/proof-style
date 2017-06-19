@@ -1,0 +1,41 @@
+.news {
+    float: right;
+    width: 25%;
+}
+
+.title {
+    margin: 0 0 20px 0;
+    padding: 10px;
+    background: #DDE6FF;
+    color: #293499;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.article {
+    margin: 20px 5px;
+    font-size: 80%;
+}
+
+.date {
+    float: left;
+    margin: 0 5px 0 0;
+    color: #293499;
+    font-weight: bold;
+    font-size: 100%;
+}
+
+.text {
+    display: inline;
+    color: #293499;
+}
+
+.text p:last-of-type {
+    display: inline;
+}
+
+.link {
+    padding-right: 13px;
+    color: #D00;
+}

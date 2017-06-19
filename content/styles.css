@@ -1,0 +1,32 @@
+.content
+{
+    float: left;
+
+    width: 55%;
+}
+
+.title
+{
+    font-size: 130%;
+
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 0 15px;
+
+    color: #293499;
+}
+
+.article
+{
+    padding: 0 15px;
+}
+
+.image
+{
+    float: left;
+
+    margin: 0 15px 15px 0;
+    padding: 5px;
+
+    border: 1px solid #45f;
+}
