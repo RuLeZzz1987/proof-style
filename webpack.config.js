@@ -18,7 +18,12 @@ module.exports = {
                 test: /\.css$/,
                 use: ExtractTextPlugin.extract({
                     fallbackLoader: "style-loader",
-                    loader: {loader: "css-loader", options: {modules: true, localIdentName: '[path][name]-[local]'}}
+                    loader: {
+                        loader: "css-loader", options: {
+                            modules: true,
+                            localIdentName: '[path][name]-[local]'
+                        }
+                    }
                 })
             },
             {
